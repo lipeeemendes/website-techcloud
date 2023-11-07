@@ -1,3 +1,5 @@
+import { Container } from '~/components/container'
+
 import type { MetaFunction } from '@remix-run/node'
 
 export const meta: MetaFunction = () => {
@@ -7,6 +9,10 @@ export const meta: MetaFunction = () => {
 	]
 }
 
-export default function Index() {
-	return <h1>teste</h1>
+export default function Home() {
+	return (
+		<Container>
+			<h1>teste</h1>
+		</Container>
+	)
 }

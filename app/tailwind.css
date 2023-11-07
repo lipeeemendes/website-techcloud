@@ -4,7 +4,7 @@
  
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: #888585;
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -33,6 +33,13 @@
     --ring: 222.2 84% 4.9%;
  
     --radius: 0.5rem;
+
+    --font-default: 'Raleway';
+    /*--font-default-strong: 'Raleway-Medium';
+    --font-secondary: 'Gilroy-Regular';
+    --font-secondary-medium: 'Gilroy-Medium';
+    --font-secondary-bold: 'Gilroy-Bold';
+    --font-secondary-strong:*/
   }
  
   .dark {
@@ -71,6 +78,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background font-raleway text-foreground;
+
   }
 }
